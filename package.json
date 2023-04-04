@@ -1,13 +1,16 @@
 {
-  "name": "rabbit-test",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/amqplib": "^0.10.1",
-    "tsx": "^3.12.6"
-  },
-  "dependencies": {
-    "amqplib": "^0.10.3"
-  }
+    "name": "rabbit-test",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "tsx index.ts"
+    },
+    "devDependencies": {
+        "@types/amqplib": "^0.10.1",
+        "tsx": "^3.12.6"
+    },
+    "dependencies": {
+        "amqplib": "^0.10.3"
+    }
 }
