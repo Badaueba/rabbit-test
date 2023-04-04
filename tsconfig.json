@@ -1,0 +1,38 @@
+{
+    "exclude": ["dist/", "node_modules"],
+    "include": ["./**/*.ts", "./**/*.json"],
+
+    "compilerOptions": {
+        "module": "ES2022",
+        "moduleResolution": "Node",
+        "declaration": true,
+        "removeComments": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+        "target": "ESNext",
+        "noEmit": false,
+        "composite": true,
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "baseUrl": "./",
+        "incremental": true,
+        "skipLibCheck": true,
+        "strictNullChecks": false,
+        "noImplicitAny": false,
+        "strictBindCallApply": false,
+        "forceConsistentCasingInFileNames": false,
+        "noFallthroughCasesInSwitch": false,
+        "outDir": "./dist",
+        "paths": {
+            "@emit/*": ["./emit/*"],
+            "@db/*": ["./db/*"]
+        },
+        "types": ["node"]
+    },
+
+    "ts-node": {
+        "esm": true
+    }
+}
